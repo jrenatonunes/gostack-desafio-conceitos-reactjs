@@ -6,21 +6,63 @@
 
 body {
   font-size: 14px;
+  background-color: #f1f1f1;
 }
 
-div {
+
+div.container {
   width: 100%;
-  margin: 20px;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+div ul {
+  width: 90%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 12px 0;
+
 }
 
 div li {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fefefe;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+div li:hover {
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072);
 }
 
 div li + li {
   margin-top: 15px;
 }
+
+div ul li div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 14px;
+}
+
+span {
+  margin: 2px 0;
+}
+
 
 button {
   background: #7159c1;
@@ -33,7 +75,9 @@ button {
   font-size: 14px;
 }
 
+
 div li button {
-  margin: 0 15px;
+  margin: 14px;
   background: #ca4949;
+  border-radius: 4px;
 }
